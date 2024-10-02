@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <title>BT ENGINE | Web Design Mastery</title>
+
+        <!-- 
+    - favicon
+  -->
+        <link rel="shortcut icon" href="./assets/images/perfect.png" type="image/svg+xml" />
+
+        <!-- 
+    - custom css link
+  -->
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+
+        <!-- 
+    - google font link
+  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+
+        <!-- Sweetalerts -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" />
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </head>
+
+    <body id="top">
+        <!-- 
+    - #HEADER
+  -->
+
+        <header class="header" data-header>
+            <div class="container">
+                <a href="#" class="logo">BT Engine</a>
+
+                <nav class="navbar container" data-navbar>
+                    <ul class="navbar-list">
+                        <li>
+                            <a href="#home" class="navbar-link" data-nav-link>Beranda</a>
+                        </li>
+
+                        <li>
+                            <a href="#service" class="navbar-link" data-nav-link>Layanan</a>
+                        </li>
+
+                        <li>
+                            <a href="#project" class="navbar-link" data-nav-link>Catalog</a>
+                        </li>
+
+                        <li>
+                            <a href="#about" class="navbar-link" data-nav-link>Tentang Kami</a>
+                        </li>
+
+                        <li>
+                            <a href="#team" class="navbar-link" data-nav-link>Team</a>
+                        </li>
+
+                        <li>
+                            <a href="#contact" class="navbar-link" data-nav-link>Kontak Kami</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
+                    <ion-icon name="menu-outline" class="open"></ion-icon>
+                    <ion-icon name="close-outline" class="close"></ion-icon>
+                </button>
+            </div>
+        </header>
+
+        <main>
+            <article>
+                <!-- 
+        - #HERO
+      -->
+
+                <section class="section hero" id="home" aria-label="hero">
+                    <div class="container">
+                        <div class="hero-content">
+                            <p class="hero-subtitle">Selamat datang di BTEngine</p>
+
+                            <h1 class="h1 hero-title">Pilihan tepat untuk ide kreatif Anda</h1>
+
+                            <p class="hero-text">Software Engineer Only | Produk | Barang | Katalog</p>
+
+                            <a href="#service" class="btn btn-primary">Layanan Kami</a>
+                        </div>
+
+                        <figure class="hero-banner">
+                            <video width="720" height="673" autoplay muted loop class="w-100">
+                                <source src="./assets/images/BT Enginee.mp4" type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video>
+                        </figure>
+                    </div>
+                </section>
+
+                <!-- 
+        - #SERVICE
+      -->
+
+                <section class="section service" id="service" aria-label="service">
+                    <div class="container">
+                        <h2 class="h2 section-title">Layanan Kami</h2>
+
+                        <p class="section-text">Layanan kami siap membantu memenuhi kebutuhan Anda dengan solusi kreatif dan inovatif.</p>
+
+                        <ul class="grid-list">
+                            <li>
+                                <div class="service-card">
+                                    <div class="card-icon" style="background-color: #13c4a1">
+                                        <ion-icon name="desktop"></ion-icon>
+                                    </div>
+
+                                    <h3 class="h3">
+                                        <a href="#" class="card-title">Design Graphic</a>
+                                    </h3>
+
+                                    <p class="card-text">Kami menawarkan layanan Graphic Design yang siap membantu Anda memperkuat identitas visual bisnis atau proyek Anda.</p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="service-card">
+                                    <div class="card-icon" style="background-color: #6610f2">
+                                        <ion-icon name="card"></ion-icon>
+                                    </div>
+
+                                    <h3 class="h3">
+                                        <a href="#" class="card-title">Web</a>
+                                    </h3>
+
+                                    <p class="card-text">Akses produk berkualitas tinggi dan wujudkan ide kreatif Anda bersama kami untuk meraih sukses di era digital.</p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="service-card">
+                                    <div class="card-icon" style="background-color: #ffb700">
+                                        <ion-icon name="shirt"></ion-icon>
+                                    </div>
+
+                                    <h3 class="h3">
+                                        <a href="#" class="card-title">Sablon</a>
+                                    </h3>
+
+                                    <p class="card-text">Kami hadir untuk memberikan layanan sablon yang unggul, mencetak desain Anda dengan presisi dan ketahanan tinggi.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- 
+        - #PROJECT
+      -->
+
+                <section class="section project" id="project" aria-label="project">
+                    <div class="container">
+                        <h2 class="h2 section-title">Catalog Harga</h2>
+                        <p class="section-text">Temukan berbagai pilihan unggulan dalam katalog harga kami, yang siap memberikan solusi terbaik untuk setiap kesempatan.</p>
+                        <ul class="grid-list">
+                            <div class="catalog-card-1">
+                                <li>
+                                    <div class="project-card">
+                                        <figure class="card-banner img-holder" style="--width: 510; --height: 700">
+                                            <img src="./assets/images/catalog-5.jpg" width="510" height="700" loading="lazy" alt="Designing a better cinema experience" class="img-cover" />
+                                        </figure>
+                                        <div class="card-content">
+                                            <p class="card-subtitle">Catalog</p>
+                                            <h3 class="h3">
+                                                <a href="#" class="card-title">Daftar harga Sablon 144 PCS</a>
+                                            </h3>
+                                            <a href="#" class="btn btn-primary open-modal" data-modal="modal1">Lihat Detail</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- Modal -->
+                                <div id="modal1" class="project-modal">
+                                    <div class="project-modal-content">
+                                        <span class="project-close-btn">&times;</span>
+                                        <img src="./assets/images/catalog-5.jpg" alt="Designing a better cinema experience" class="modal-image" />
+                                        <div class="modal-text-content">
+                                            <h3>Daftar harga Sablon 144 PCS</h3>
+                                            <p>Detail informasi tentang proyek ini...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <li>
+                                <div class="project-card">
+                                    <figure class="card-banner img-holder" style="--width: 510; --height: 700">
+                                        <img src="./assets/images/catalog-6.jpg" width="510" height="700" loading="lazy" alt="Building design process within teams" class="img-cover" />
+                                    </figure>
+                                    <div class="card-content">
+                                        <p class="card-subtitle">Catalog</p>
+                                        <h3 class="h3">
+                                            <a href="#" class="card-title">Daftar harga Sablon 72 PCS</a>
+                                        </h3>
+                                        <a href="#" class="btn btn-primary open-modal" data-modal="modal2">Lihat Detail</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <div id="modal2" class="project-modal">
+                                <div class="project-modal-content">
+                                    <span class="project-close-btn">&times;</span>
+                                    <img src="./assets/images/catalog-6.jpg" alt="Building design process within teams" class="modal-image" />
+                                    <div class="modal-text-content">
+                                        <h3>Daftar harga Sablon 72 PCS</h3>
+                                        <p>Detail informasi tentang proyek ini...</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <li>
+                                <div class="project-card">
+                                    <figure class="card-banner img-holder" style="--width: 510; --height: 700">
+                                        <img src="./assets/images/catalog-7.jpg" width="510" height="700" loading="lazy" alt="Enhancing team collaboration" class="img-cover" />
+                                    </figure>
+                                    <div class="card-content">
+                                        <p class="card-subtitle">Catalog</p>
+                                        <h3 class="h3">
+                                            <a href="#" class="card-title">Daftar harga Sablon 12 PCS</a>
+                                        </h3>
+                                        <a href="#" class="btn btn-primary open-modal" data-modal="modal3">Lihat Detail</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <div id="modal3" class="project-modal">
+                                <div class="project-modal-content">
+                                    <span class="project-close-btn">&times;</span>
+                                    <img src="./assets/images/catalog-7.jpg" alt="Enhancing team collaboration" class="modal-image" />
+                                    <div class="modal-text-content">
+                                        <h3>Daftar harga Sablon 12 PCS</h3>
+                                        <p>Detail informasi tentang proyek ini...</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <li>
+                                <div class="project-card">
+                                    <figure class="card-banner img-holder" style="--width: 510; --height: 700">
+                                        <img src="./assets/images/catalog-8.jpg" width="510" height="700" loading="lazy" alt="Innovative marketing strategies" class="img-cover" />
+                                    </figure>
+                                    <div class="card-content">
+                                        <p class="card-subtitle">Catalog</p>
+                                        <h3 class="h3">
+                                            <a href="#" class="card-title">Daftar harga Sablon Retail</a>
+                                        </h3>
+                                        <a href="#" class="btn btn-primary open-modal" data-modal="modal4">Lihat Detail</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <div id="modal4" class="project-modal">
+                                <div class="project-modal-content">
+                                    <span class="project-close-btn">&times;</span>
+                                    <img src="./assets/images/catalog-8.jpg" alt="Innovative marketing strategies" class="modal-image" />
+                                    <div class="modal-text-content">
+                                        <h3>Daftar harga Sablon Retail</h3>
+                                        <p>Detail informasi tentang proyek ini...</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <li>
+                                <div class="project-card">
+                                    <figure class="card-banner img-holder" style="--width: 510; --height: 700">
+                                        <img src="./assets/images/catalog-3.png" width="510" height="700" loading="lazy" alt="User experience redesign" class="img-cover" />
+                                    </figure>
+                                    <div class="card-content">
+                                        <p class="card-subtitle">User Experience</p>
+                                        <h3 class="h3">
+                                            <a href="#" class="card-title">User experience redesign</a>
+                                        </h3>
+                                        <a href="#" class="btn btn-primary open-modal" data-modal="modal5">Lihat Detail</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <div id="modal5" class="project-modal">
+                                <div class="project-modal-content">
+                                    <span class="project-close-btn">&times;</span>
+                                    <img src="./assets/images/catalog-3.png" alt="User experience redesign" class="modal-image" />
+                                    <div class="modal-text-content">
+                                        <h3>User experience redesign</h3>
+                                        <p>Detail informasi tentang proyek ini...</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <li>
+                                <div class="project-card">
+                                    <figure class="card-banner img-holder" style="--width: 510; --height: 700">
+                                        <img src="./assets/images/project-6.png" width="510" height="700" loading="lazy" alt="Data analysis solutions" class="img-cover" />
+                                    </figure>
+                                    <div class="card-content">
+                                        <p class="card-subtitle">Data Analysis</p>
+                                        <h3 class="h3">
+                                            <a href="#" class="card-title">Data analysis solutions</a>
+                                        </h3>
+                                        <a href="#" class="btn btn-primary open-modal" data-modal="modal6">Lihat Detail</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <div id="modal6" class="project-modal">
+                                <div class="project-modal-content">
+                                    <span class="project-close-btn">&times;</span>
+                                    <img src="./assets/images/project-6.png" alt="Data analysis solutions" class="modal-image" />
+                                    <div class="modal-text-content">
+                                        <h3>Data analysis solutions</h3>
+                                        <p>Detail informasi tentang proyek ini...</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- 
+        - #ABOUT
+      -->
+
+                <section class="section about" id="about" aria-label="about">
+                    <div class="container">
+                        <div class="about-banner img-holder" style="--width: 600; --height: 675">
+                            <img src="./assets/images/about.png" width="600" height="675" loading="lazy" alt="about banner" class="img-cover" />
+                        </div>
+
+                        <div class="about-content">
+                            <p class="section-text" style="color: #fd3116; letter-spacing: 5px">WELCOME TO BT ENGINE</p>
+
+                            <h3 class="h3">Siapakah Kami?</h3>
+
+                            <p class="section-text">
+                                BT Engine adalah perusahaan yang bergerak di bidang jasa desain, katalog, sablon, dan pengembangan web. Kami terdiri dari anak muda kreatif jurusan Rekayasa Perangkat Lunak yang bersemangat menghadirkan
+                                solusi inovatif untuk klien kami.
+                            </p>
+                            <p class="section-text">
+                                Dengan kombinasi pengetahuan teknis dan kreativitas, kami siap membantu mewujudkan ide-ide Anda menjadi kenyataan, menciptakan desain menarik dan website responsif. Bersama BT Engine, mari wujudkan visi Anda
+                                dengan inovasi tanpa batas!
+                            </p>
+
+                            <!-- Additional Info Section -->
+                            <div class="about-stats">
+                                <div class="stat-item">
+                                    <p>5+</p>
+                                    <h4>PROJECT SUKSES</h4>
+                                </div>
+                                <div class="stat-item">
+                                    <p>5+</p>
+                                    <h4>Team Work</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 
+        - #CTA
+      -->
+
+                <section class="section cta" aria-label="cta" style="background-image: url('./assets/images/cta-bg.jpg')">
+                    <div class="container">
+                        <p class="cta-subtitle">Jadi, Apa Langkah Berikutnya?</p>
+
+                        <h2 class="h2 section-title">Mari Bersama Mewujudkan Ide Kreatif!</h2>
+
+                        <a href="https://rumahkreatifbt14.github.io/btenginee/" class="btn btn-secondary">Berbelanja Sekarang <i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </section>
+
+                <!-- Team -->
+                <section class="section team" id="team">
+                    <div class="container">
+                        <h2 class="h2 section-title">Tim Kami</h2>
+                        <p class="section-text">Sekumpulan anak muda kreatif jurusan Rekayasa Perangkat Lunak SMK Bintang Timur Pematangsiantar.</p>
+                        <br />
+                        <br />
+
+                        <div class="team-list">
+                            <!-- Baris 1: 3 Team Card -->
+                            <div class="team-card">
+                                <img src="./assets/images/team-1.png" alt="Frans Siregar" class="team-img" />
+                                <div class="team-content">
+                                    <h2 class="team-name">Frans Siregar</h2>
+                                    <p class="team-role">Graphic Designer</p>
+                                    <div class="team-icons">
+                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="https://www.instagram.com/bang.frans15"><i class="fa-brands fa-instagram"></i></a>
+                                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="team-card">
+                                <img src="./assets/images/team-2.png" alt="Samuel Silalahi" class="team-img" />
+                                <div class="team-content">
+                                    <h2 class="team-name">Samuel Silalahi</h2>
+                                    <p class="team-role">Graphic Designer</p>
+                                    <div class="team-icons">
+                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="https://www.instagram.com/muek._"><i class="fa-brands fa-instagram"></i></a>
+                                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="team-card">
+                                <img src="./assets/images/team-5.jpg" alt="Nico Nainggolan" class="team-img" />
+                                <div class="team-content">
+                                    <h2 class="team-name">Belinha</h2>
+                                    <p class="team-role">Kepala Sekolah</p>
+                                    <div class="team-icons">
+                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="https://www.instagram.com/_whois.nan27/?utm_source=ig_web_button_share_sheet"><i class="fa-brands fa-instagram"></i></a>
+                                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="team-list center">
+                            <!-- Baris 2: 2 Team Card -->
+                            <div class="team-card half-card">
+                                <img src="./assets/images/team-3.png" alt="Reynaldi Haloho" class="team-img" />
+                                <div class="team-content">
+                                    <h2 class="team-name">Nico Nainggolan</h2>
+                                    <p class="team-role">Web Tester</p>
+                                    <div class="team-icons">
+                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="https://www.instagram.com/nic_nggln"><i class="fa-brands fa-instagram"></i></a>
+                                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="team-card half-card">
+                                <img src="./assets/images/team-4.png" alt="Team Member 5" class="team-img" />
+                                <div class="team-content">
+                                    <h2 class="team-name">Reynaldi Haloho</h2>
+                                    <p class="team-role">Web Tester</p>
+                                    <div class="team-icons">
+                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="https://www.instagram.com/reynaldiagatha.id/ "><i class="fa-brands fa-instagram"></i></a>
+                                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 
+        - #CONTACT
+      -->
+
+                <section class="section contact" id="contact" aria-label="contact">
+                    <div class="container">
+                        <h2 class="h2 section-title">Mari Hubungi Kami</h2>
+
+                        <p class="section-text">Hubungi kami sekarang untuk mendapatkan solusi terbaik bagi kebutuhan Anda!</p>
+
+                        <form name="contact-form" class="contact-form">
+                            <div class="input-wrapper">
+                                <input type="text" name="name" aria-label="name" placeholder="Masukkan nama*" required class="input-field" />
+                                <input type="email" name="email_address" aria-label="email" placeholder="E-mail*" required class="input-field" />
+                            </div>
+
+                            <div class="input-wrapper">
+                                <input type="text" name="subject" aria-label="subject" placeholder="Subject*" class="input-field" />
+                                <input type="number" name="phone" aria-label="phone" placeholder="Nomor telepon*" class="input-field" />
+                            </div>
+
+                            <textarea name="message" aria-label="message" placeholder="Pesan Anda...*" required class="input-field"></textarea>
+
+                            <button type="submit" class="btn btn-primary">Kirim Pesan <i class="fas fa-paper-plane"></i></button>
+                        </form>
+
+                        <ul class="contact-list">
+                            <li class="contact-item">
+                                <div class="contact-card">
+                                    <div class="card-icon">
+                                        <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+                                    </div>
+
+                                    <div class="card-content">
+                                        <h3 class="h3 card-title">E-mail</h3>
+
+                                        <a href="rumahkreatifbt@gmail.com" class="card-link">rumahkreatifbt@gmail.com</a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="contact-item">
+                                <div class="contact-card">
+                                    <div class="card-icon">
+                                        <ion-icon name="map-outline" aria-hidden="true"></ion-icon>
+                                    </div>
+
+                                    <div class="card-content">
+                                        <h3 class="h3 card-title">Kunjungi Kami</h3>
+
+                                        <address class="card-address">Jln. Melanthon Siregar,<br />Pematangsiantar</address>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="contact-item">
+                                <div class="contact-card">
+                                    <div class="card-icon">
+                                        <ion-icon name="headset-outline" aria-hidden="true"></ion-icon>
+                                    </div>
+
+                                    <div class="card-content">
+                                        <h3 class="h3 card-title">Hubungi Kami</h3>
+
+                                        <a href="tel:+62 882 1081 33221" class="card-link">+62 882 1081 33221</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </article>
+        </main>
+
+        <!-- 
+    - #FOOTER
+  -->
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="about group">
+                    <h2>BT Engine</h2>
+                    <p>Siap membuat design anda <br />jadi NYATA!</p>
+                    <br />
+                </div>
+                <div class="hr"></div>
+                <div class="info group">
+                    <h3 style="font-size: 20px; font-weight: 500">Menu</h3>
+                    <ul>
+                        <li><a href="#service">Layanan</a></li>
+                        <li><a href="#project">Catalog</a></li>
+                        <li><a href="#about">Tentang Kami</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#contact">Kontak Kami</a></li>
+                    </ul>
+                </div>
+                <div class="hr"></div>
+                <div class="follow group">
+                    <h3 style="font-size: 20px; font-weight: 500">Ikuti kami</h3>
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/share/AFAtnk97UDgVRGRe/?mibextid=qi2Omg"><i class="fa-brands fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/bt.enginee?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.tiktok.com/@reynaldi_haloho?_t=8o43USB6F7a&_r=1"><i class="fa-brands fa-tiktok"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="container">
+                <p class="copyright">Copyright &copy; 2024 All rights reserved | Template by <a href="#" class="copyright-link">codewithsadee</a></p>
+                <p class="copyright">Powered by <a href="#" class="copyright-link">BT Engine</a></p>
+            </div>
+        </footer>
+
+        <!-- 
+    - #BACK TO TOP
+  -->
+
+        <a href="https://wa.me/0882018133221" aria-label="Chat via WhatsApp" data-whatsapp-btn class="whatsapp-btn">
+            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+        </a>
+
+        <!-- 
+    - custom js link
+  -->
+        <script src="./assets/js/script.js" defer></script>
+
+        <!-- 
+    - ionicon link
+  -->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="https://unpkg.com/scrollreveal"></script>
+    </body>
+</html>
